@@ -61,9 +61,10 @@ module.exports = function(grunt) {
       },
       app: {
         files: [
-          '<%= yo.src %>/{,*/}*.html',
+          '<%= yo.src %>/*/*.html',
           '{.tmp,<%= yo.src %>}/{,*/}*.css',
-          '{.tmp,<%= yo.src %>}/{,*/}*.js'
+          '{.tmp,<%= yo.src %>}/{,*/}*.js',
+          '{.tmp,<%= yo.src %>}/index.js'
         ],
         options: {
           livereload: yoConfig.livereload
@@ -98,7 +99,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          '<%= yo.src %>/<%= yo.name %>.css': '<%= yo.src %>/<%= yo.name %>.less'
+          '<%= yo.src %>/<%= yo.name %>.css': '<%= yo.src %>/main.less'
         }
       }
     },
@@ -139,7 +140,7 @@ module.exports = function(grunt) {
         banner: '<%= meta.banner %>'
       },
       dist: {
-        src: ['<%= yo.src %>/<%= pkg.name %>.js'],
+        src: ['<%= yo.src %>/index.js'],
         dest: '<%= yo.dist %>/<%= pkg.name %>.js'
       }
       // dist: {
@@ -154,7 +155,7 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['<%= yo.src %>/<%= pkg.name %>.js'],
+        src: ['<%= yo.src %>/index.js'],
         dest: '<%= yo.dist %>/<%= pkg.name %>.js'
       }
     },

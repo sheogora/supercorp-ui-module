@@ -1,6 +1,9 @@
 # supercorp-ui-module
 
-
+## Reading Material
+https://www.sitepoint.com/5-minutes-to-min-safe-angular-code-with-grunt/
+https://www.safaribooksonline.com/blog/2013/11/07/creating-an-angularjs-component/
+https://medium.com/@cyrilletuzi/how-to-build-and-publish-an-angular-module-7ad19c0b4464
 
 ## Getting Started
 
