@@ -59,3 +59,4 @@ var uiToggle = function ($timeout) {
 		}
 	};
 };
+uiToggle.$inject = ['$timeout'];

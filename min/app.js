@@ -59,3 +59,7 @@ var uiToggle = function ($timeout) {
 		}
 	};
 };
+uiToggle.$inject = ['$timeout'];
+angular.module('common.ui.elements', [])
+		.directive('uiToggle', uiToggle)
+'use strict';
